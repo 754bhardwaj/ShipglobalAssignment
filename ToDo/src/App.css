@@ -1,0 +1,39 @@
+/* Ensure cards fit well on small screens */
+.crd {
+  width: calc(100% - 1.25rem); 
+}
+
+
+@media (min-width: 640px) {
+  .crd {
+    width: calc(50% - 1.25rem); 
+  }
+}
+
+@media (min-width: 768px) {
+  .crd {
+    width: calc(25% - 1.25rem); 
+  }
+}
+
+.nav-btn {
+  font-size: 2rem; 
+  width: 3rem; 
+  height: 3rem; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem; 
+  padding: 0.75rem; 
+  transition: background-color 0.4s ease, transform 0.4s ease;
+}
+
+
+.nav-btn:hover {
+  background-color: #b2dfdb; 
+  transform: scale(1.15); 
+}
+
+.nav-btn:disabled {
+  cursor: not-allowed; 
+}
